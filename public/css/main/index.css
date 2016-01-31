@@ -1,0 +1,23 @@
+.gnb-main-section {
+    /*background: url('/img/main_bg.png') no-repeat;*/
+    /*background-size: cover;*/
+}
+#gnb-main-video {
+    -webkit-transform: 50%;
+    -moz-transform: 50%;
+    -ms-transform: 50%;
+    -o-transform: 50%;
+    transform: 50%;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    display: block;
+    margin-left: -720px;
+    width: 1440px;
+}
+@media only screen and (max-width: 1023px) {
+    #gnb-main-video {
+        width: 1160px;
+        margin-left: -580px;
+    }
+}
