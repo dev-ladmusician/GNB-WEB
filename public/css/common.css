@@ -1,4 +1,12 @@
 @font-face {
     font-family: 'BebasNeue';
-    src: url('/font/BebasNeue.otf') format('opentype');
+    src: url('/font/BEBASNEUE/BebasNeue.otf') format('opentype');
+}
+@font-face {
+    font-family: 'ZesStype_BLACK';
+    src: url('/font/ZESSTYPE/1st_black_00.ttf') format('truetype');
+}
+html {
+    -webkit-font-smoothing: antialiased;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.004);
 }

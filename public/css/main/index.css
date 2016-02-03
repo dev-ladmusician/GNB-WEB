@@ -5,6 +5,7 @@
     top: 0px;
     left: 0px;
     z-index: 2;
+    background-color: #004B87;
 }
 .gnb-main-section .gnb-main-title-container {
     display: table;
@@ -15,36 +16,35 @@
     display: table-cell;
     text-align: center;
     vertical-align: middle;
-    color: #fff;
-    font-family:'BebasNeue' !important;
+}
+.gnb-main-section .gnb-main-title-container .gnb-main-title .title {
+    font-family: 'ZesStype_BLACK';
     font-style: italic;
     font-size: 7.5em;
     font-weight: bold;
+    color: #fff;
 }
-
-/* main video bg */
-.gnb-main-video-section {
-    z-index: 1;
-    position: relative;
-    overflow: hidden;
-}
-#gnb-main-video {
-    -webkit-transform: 50%;
-    -moz-transform: 50%;
-    -ms-transform: 50%;
-    -o-transform: 50%;
-    transform: 50%;
-    position: relative;
-    top: 50%;
-    left: 50%;
+.gnb-main-section .gnb-main-title-container .gnb-main-title .gnb-main-btn-container .gnb-main-btn {
+    border: 1px solid #fff;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    padding: 10px 30px 10px 30px;
+    color: #C7C7C7 !important;
+    margin-left: auto;
+    margin-right: auto;
+    width: 400px;
     display: block;
-    margin-left: -720px;
-    width: 1440px;
-
+    -webkit-transition: 0.2s ease-out all;
 }
+.gnb-main-section .gnb-main-title-container .gnb-main-title .gnb-main-btn-container .gnb-main-btn:hover {
+    text-decoration: none;
+    background: rgba(55, 125, 204, 0.16);
+}
+
 @media only screen and (max-width: 1023px) {
-    #gnb-main-video {
-        width: 1160px;
-        margin-left: -580px;
-    }
+    /*#gnb-main-video {*/
+        /*width: 1160px;*/
+        /*margin-left: -580px;*/
+    /*}*/
 }
