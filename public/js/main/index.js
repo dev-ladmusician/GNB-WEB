@@ -3,10 +3,7 @@ $(document).ready(function () {
     $('.gnb-main-section').css('height', windowHeight);
     $('.gnb-main-container').css('height', windowHeight);
 
-    $(function() {
-        var $video = $('#video-main');
-        $video.on('canplaythrough', function() {
-            this.play();
-        });
-    });
+    console.log("test");
 });
+
+
