@@ -64,6 +64,9 @@
     color: #ffffff !important;
     background-color: rgba(16, 164, 243, 0.1) !important;
 }
+.gnb-main-section .gnb-main-container .gnb-main-input-container .unable {
+    cursor:not-allowed !important;
+}
 .gnb-main-section .gnb-main-container .gnb-main-request-container {
     margin-top: 4em;
     font-size: 20px !important;

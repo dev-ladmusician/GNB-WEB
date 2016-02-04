@@ -1,7 +1,7 @@
 <% include ../_COMMON/header %>
 
-<section class="gnb-main-section">
-    <div class="gnb-main-container container ">
+<section class="gnb-main-section" ng-controller="MainCtrl">
+    <div class="gnb-main-container container">
         <div class="gnb-main-content">
             <div class="gnb-main-title">
                 <div class="title">쥐앤비</div>
@@ -9,15 +9,21 @@
                 <div class="gnb-main-input-container">
                     <input class="gnb-input gnb-input-username"
                            placeholder="학번   ex) 2009037050"
+                           ng-model="username"
                            type="text" >
                 </div>
                 <div class="gnb-main-input-container">
                     <input class="gnb-input gnb-input-password"
                            placeholder="비밀번호"
+                           ng-model="password"
                            type="password" >
                 </div>
                 <div class="gnb-main-input-container">
-                    <a class="gnb-input gnb-auth-submit">로그인</a>
+                    <a class="gnb-input gnb-auth-submit"
+                       ng-class="{'enable': (username.length == 10 && password.length > 5), 'unable': (username.length != 10 || password.length <= 5)}"
+                       ng-click="submit()">
+                        로그인
+                    </a>
                 </div>
 
                 <div class="gnb-main-request-container">

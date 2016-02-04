@@ -4,8 +4,11 @@ $(document).ready(function () {
 
     $('.gnb-main-section').css('height', windowHeight - footerHeight);
     $('.gnb-main-container').css('height', windowHeight - footerHeight);
-
-    console.log("test");
 });
 
-
+var app = angular.module('gnbApp', []).
+controller('MainCtrl', function ($scope) {
+    $scope.test= true;
+    $scope.submit = function () {
+    }
+});
