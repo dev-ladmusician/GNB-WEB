@@ -83,6 +83,9 @@
 .gnb-sign-in {
     color: rgba(251, 251, 251, 0.7);
 }
+.error-msg {
+    color: #EC8080 !important
+}
 
 @media only screen and (max-width: 1023px) {
     /*#gnb-main-video {*/
